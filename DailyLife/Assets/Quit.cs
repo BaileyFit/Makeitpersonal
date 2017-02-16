@@ -16,9 +16,10 @@ public class Quit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if( quit == true)
+		if(flowchart.GetBooleanVariable("Quit") == true)
         {
             Application.Quit();
+            Debug.Log("quit");
         }
 	}
 }
